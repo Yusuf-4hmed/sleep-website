@@ -1,0 +1,34 @@
+    body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f5f7fa;
+    }
+    
+    nav{
+    background:#1e3a5f;
+    padding:10px;
+    }
+    
+    nav ul{
+    list-style:none;
+    display:flex;
+    flex-wrap:wrap;
+    align-content: center;
+    margin: 0px;
+    }
+    
+    nav li{
+    margin: 0px 15px 5px 0px;
+    }
+    
+    nav a{
+    color:white;
+    text-decoration:none;
+    font-size: 15px;
+    font-weight: lighter;
+    }
+    
+    nav a:hover{
+    opacity: 0.8;
+    }
+    
