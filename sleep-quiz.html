@@ -20,6 +20,42 @@
         <li><a href="contact.html">Contact</a></li>
         <li><a href="resources.html">Resources</a></li>
         </ul>
-    </nav>
+</nav>
+
+<div class="container">
+    <h1>Sleep Quiz</h1>
+
+    <p>Test your knowledge about sleep and health. Make sure to read the other pages before attempting for a better chance.</p>
+
+    <form id="quizForm">
+        
+        <h3>1. How long is one sleep cycle?</h3>
+        <label><input type="radio" name="q1" value="a"> 30 minutes</label><br>
+        <label><input type="radio" name="q1" value="b"> 60 minutes</label><br>
+        <label><input type="radio" name="q1" value="c"> 90 minutes</label><br>
+
+        <h3>2. Which stage of sleep is most important for physical recovery?</h3>
+        <label><input type="radio" name="q2" value="a"> Light sleep</label><br>
+        <label><input type="radio" name="q2" value="b"> Deep sleep</label><br>
+        <label><input type="radio" name="q2" value="c"> REM sleep</label><br>
+
+        <h3>3. What hormone helps regulate sleep?</h3>
+        <label><input type="radio" name="q3" value="a"> Melatonin</label><br>
+        <label><input type="radio" name="q3" value="b"> Adrenaline</label><br>
+        <label><input type="radio" name="q3" value="c"> Dopamine</label><br>
+
+        <h3>4. What is a common effect of sleep deprivation?</h3>
+        <label><input type="radio" name="q4" value="a"> Increased energy</label><br>
+        <label><input type="radio" name="q4" value="b"> Better memory</label><br>
+        <label><input type="radio" name="q4" value="c"> Reduced concentration</label><br>
+
+        <br>
+        <button type="button" onclick="checkQuiz()">Submit</button>
+    </form>
+
+    <div id="quizResult"></div>
+</div>
+
+<script src="js/quiz.js"></script>
 </body>
-</html>
+</html> 
