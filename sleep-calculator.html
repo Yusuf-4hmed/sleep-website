@@ -22,8 +22,26 @@
         </ul>
     </nav>
     <div class="container">
-        <h1>Sleep Cycles</h1>
-        <p><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
+        <h1>Sleep Calculator</h1>
+
+        <p>
+            Enter your desired wake-up time to calculate the best times to go to sleep. Sleep does not occur in one continuous block, but instead happens in cycles that last around 90 minutes.
+        </p>
+
+        <p>
+            It is easier for the body to wake up at the end of a sleep cycle rather than in the middle of deep sleep. Waking up during a cycle can make you feel tired and groggy, even if you have slept for many hours.
+        </p>
+
+        <p>
+            This calculator works by counting backwards in 90-minute intervals from your wake-up time. It then suggests bedtimes that allow you to complete full sleep cycles, helping you wake up feeling more refreshed.
+        </p>
+
+        <label for="wakeTime">Wake-up time:</label><br>
+        <input type="time" id="wakeTime">
+        <button onclick="calculateSleep()">Calculate</button>
+
+        <div id="results"></div>
     </div>
 </body>
+<script src="js/calculator.js"></script>
 </html>
