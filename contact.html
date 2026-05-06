@@ -22,21 +22,82 @@
         </ul>
     </nav>
 <div class="container">
-    <h1>Contact</h1>
+    <h1>Contact Us:</h1>
 
     <p>If you have any questions about sleep or this website, feel free to send a message below.</p>
 
-    <form id="contactForm">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" required><br>
+    <form id="contact-form">
 
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" required><br>
+<label for="name">Full Name:</label><br>
+<input type="text" id="name" name="name" required><br><br>
 
-        <label for="message">Message:</label><br>
-        <textarea id="message" rows="5" required></textarea><br>
+<label for="email">Email Address:</label><br>
+<input type="email" id="email" name="email" required><br><br>
 
-        <button type="button" onclick="submitForm()">Send Message</button>
+<label for="age">Age:</label><br>
+<input type="number" id="age" name="age" min="1" max="120" required><br><br>
+
+
+<label for="country">Country:</label><br>
+<select id="country" name="country">
+    <option value="">-- Select your country --</option>
+    <option value="uk">United Kingdom</option>
+    <option value="us">United States</option>
+    <option value="ca">Canada</option>
+    <option value="au">Australia</option>
+    <option value="other">Other</option>
+</select><br><br>
+
+
+<label for="sleep-hours">How many hours of sleep do you usually get?</label><br>
+<select id="sleep-hours" name="sleep-hours" size="5">
+    <option value="less-than-4">Less than 4 hours</option>
+    <option value="4-5">4–5 hours</option>
+    <option value="5-6">5–6 hours</option>
+    <option value="6-7">6–7 hours</option>
+    <option value="7-8">7–8 hours</option>
+    <option value="8-9">8–9 hours</option>
+    <option value="more-than-9">More than 9 hours</option>
+</select><br><br>
+
+
+<label>Occupation:</label><br>
+<input type="radio" id="student" name="occupation" value="student">
+<label for="student">Student</label><br>
+<input type="radio" id="teacher" name="occupation" value="teacher">
+<label for="teacher">Teacher / Educator</label><br>
+<input type="radio" id="healthcare" name="occupation" value="healthcare">
+<label for="healthcare">Healthcare Worker</label><br>
+<input type="radio" id="other-occupation" name="occupation" value="other">
+<label for="other-occupation">Other</label><br><br>
+
+
+<label>What is your enquiry related to? (tick all that apply)</label><br>
+<input type="checkbox" id="cb-sleep-benefits" name="enquiry-topic" value="sleep-benefits">
+<label for="cb-sleep-benefits">Sleep Benefits</label><br>
+<input type="checkbox" id="cb-sleep-cycles" name="enquiry-topic" value="sleep-cycles">
+<label for="cb-sleep-cycles">Sleep Cycles</label><br>
+<input type="checkbox" id="cb-sleep-disorders" name="enquiry-topic" value="sleep-disorders">
+<label for="cb-sleep-disorders">Sleep Disorders</label><br>
+<input type="checkbox" id="cb-sleep-tips" name="enquiry-topic" value="sleep-tips">
+<label for="cb-sleep-tips">Sleep Tips</label><br>
+<input type="checkbox" id="cb-students" name="enquiry-topic" value="students">
+<label for="cb-students">Students</label><br>
+<input type="checkbox" id="cb-calculator" name="enquiry-topic" value="calculator">
+<label for="cb-calculator">Sleep Calculator</label><br>
+<input type="checkbox" id="cb-quiz" name="enquiry-topic" value="quiz">
+<label for="cb-quiz">Sleep Quiz</label><br>
+<input type="checkbox" id="cb-resources" name="enquiry-topic" value="resources">
+<label for="cb-resources">Resources</label><br>
+<input type="checkbox" id="cb-other" name="enquiry-topic" value="other">
+<label for="cb-other">Other</label><br><br>
+
+
+<label for="message">Your Message:</label><br>
+<textarea id="message" name="message" rows="10" cols="50" required></textarea><br><br>
+
+<button type="button" onclick="submitForm()">Submit Message</button>
+<button type="button" onclick="resetForm()">Reset Button</button>
     </form>
 
     <div id="formResult"></div>

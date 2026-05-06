@@ -1,6 +1,10 @@
+    html {
+        margin: 20px;
+    }
+
     body{
     font-family: Arial, sans-serif;
-    margin: 10;
+    margin: 0px;
     background:#f5f7fa;
     }
     
