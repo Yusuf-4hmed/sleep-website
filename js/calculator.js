@@ -1,3 +1,41 @@
+document.write("<h2>Welcome to the Sleep Calculator!</h2>");
+
+let position = 0;
+
+function moveMoon() {
+    position += 50;
+    document.getElementById("moon").style.left = position + "px";
+}
+
+function toggleTip() {
+    const tip = document.getElementById("sleepTip");
+    if (tip.style.display === "none") {
+        tip.style.display = "block";
+    } else {
+        tip.style.display = "none";
+    }
+}
+
+function toggleLight() {
+    document.body.classList.toggle("dark");
+}
+
+function handleLoad() {
+    alert("Welcome to the Sleep Calculator!");
+}
+
+function handleMouseOver() {
+    document.getElementById("wakeTime").style.border = "2px solid navy";
+}
+
+function handleMouseOut() {
+    document.getElementById("wakeTime").style.border = "";
+}
+
+function handleSelect() {
+    alert("Text selected!");
+}
+
 function calculateSleep() {
     const input = document.getElementById("wakeTime").value;
     const resultsDiv = document.getElementById("results");

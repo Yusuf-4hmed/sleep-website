@@ -6,7 +6,7 @@
     <title>Calculator</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+<body onload="handleLoad()">
     <nav>
         <ul>
         <li><a href="index.html">Home</a></li>
@@ -22,6 +22,11 @@
         </ul>
     </nav>
     <div class="container">
+        <div id="moon" style="position:relative; font-size:40px;">🌙</div>
+        <button onclick="moveMoon()">Move Moon</button>
+        <div id="sleepTip" style="display:none">💤 Tip: Avoid screens 1 hour before bed!</div>
+        <button onclick="toggleTip()">Show/Hide Tip</button>
+        <button onclick="toggleLight()">🌙 Toggle Light</button>
         <h1>Sleep Calculator</h1>
 
         <p>
@@ -36,8 +41,9 @@
             This calculator works by counting backwards in 90-minute intervals from your wake-up time. It then suggests bedtimes that allow you to complete full sleep cycles, helping you wake up feeling more refreshed.
         </p>
 
+        <input type="text" id="sleepNote" value="Select this text!" onselect="handleSelect()">
         <label for="wakeTime">Wake-up time:</label><br>
-        <input type="time" id="wakeTime">
+        <input type="time" id="wakeTime" onmouseover="handleMouseOver()" onmouseout="handleMouseOut()" onselect="handleSelect()">
         <button onclick="calculateSleep()">Calculate</button>
 
         <div id="results"></div>
